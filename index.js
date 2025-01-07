@@ -43,7 +43,7 @@ document.getElementById('clearBtn').addEventListener('click', function () {
 
 document.querySelectorAll('th').forEach(header => {
     header.addEventListener('click', function () {
-        const column = this.getAttribute('data-column');
+        // const column = this.getAttribute('data-column');
         const table = document.getElementById('studentDetails');
         const rows = Array.from(table.querySelectorAll('tbody tr'));
         const index = Array.from(this.parentNode.children).indexOf(this);
