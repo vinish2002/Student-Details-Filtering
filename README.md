@@ -9,11 +9,11 @@ This web app allows you to **filter** and **sort** a list of students based on t
 
 - **Select a Subject**: Choose a subject from the dropdown (English, Maths, Science, Social Science). 🎯
 - **Filter by Marks**: Filter student scores using conditions like:
-  - **Above**: Marks greater than a value 📈
-  - **Below**: Marks less than a value 📉
-  - **Between**: Marks within a range 🔄
-- **Sort**: Click on column headers (S.No, Name, or any subject marks) to sort the table! 🔢
-- **Clear Filter**: Reset the filter and see all students again with a single click! 🔄
+  - **Above**📈: Marks greater than a value 
+  - **Below**📉: Marks less than a value 
+  - **Between**🔄: Marks within a range 
+- **Sort**🔢: Click on column headers (S.No, Name, or any subject marks) to sort the table! 
+- **Clear Filter**🔄: Reset the filter and see all students again with a single click! 
 
 ---
 
