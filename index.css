@@ -39,7 +39,7 @@ body {
 .heading {
     padding: 10px 0 10px 0;
     border-bottom: 5px solid #979797b5;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.41);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.41); */
     filter: drop-shadow(0 0 3px rgb(255, 255, 255));
 }
 
@@ -54,7 +54,7 @@ body {
 
 .detail-cont {
     padding: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.41);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.41); */
     filter: drop-shadow(0 0 1px rgb(255, 255, 255));
 }
 
