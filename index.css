@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: radial-gradient(circle at 50% 0%, #0094ff, #00dfff, #00c9ff, #191dff);
+    backdrop-filter: blur(10px);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.478);
+    backdrop-filter: blur(10px);
+}
+
+.bord-radL {
+    border-radius: 10px 0 0 10px;
+}
+
+.bord-radR {
+    border-radius: 0 10px 10px 0;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+}
+
+.heading {
+    padding: 10px 0 10px 0;
+    border-bottom: 5px solid #979797b5;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.41);
+    filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+}
+
+.heading h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 150;
+    margin-bottom: 20px;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.detail-cont {
+    padding: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.41);
+    filter: drop-shadow(0 0 1px rgb(255, 255, 255));
+}
+
+.filter-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 0 20px 0;
+}
+
+@media only screen and (min-width: 112.5em) {}
+
+.radio-btn {
+    padding-top: 8px;
+
+    label {
+        font-weight: bolder;
+    }
+}
+
+.inputVal {
+    width: 90px;
+}
+
+.valInp2 {
+    display: none;
+}
+
+.filter-cont select,
+.filter-cont input,
+.filter-cont button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filter-cont-btn button {
+    border: auto;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background: #007bff;
+}
+
+.filter-cont-btn button:hover {
+    background-color: #00a806;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+th {
+    border: none;
+    cursor: pointer;
+    background-color: #949494c6;
+    font-weight: 150;
+    font-family: 'Audiowide', sans-serif;
+}
+
+th:hover {
+    color: #fff;
+    background-color: #000000;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.showResult {
+    background-color: #0bff91;
+}
