@@ -47,14 +47,14 @@ document.querySelectorAll('th').forEach(header => {
         const tbl = document.getElementById('studentDetails');
         const rows = Array.from(tbl.querySelectorAll('tbody tr'));
         const indx = Array.from(this.parentNode.children).indexOf(this);
-        const isAscending = this.classList.contains('asc');
-        this.classList.toggle('asc', !isAscending);
-        this.classList.toggle('desc', isAscending);
+        const isAsc = this.classList.contains('asc');
+        this.classList.toggle('asc', !isAsc);
+        this.classList.toggle('desc', isAsc);
 
         rows.sort((a, b) => {
             const aText = a.children[indx].textContent;
             const bText = b.children[indx].textContent;
-            return isAscending ? aText.localeCompare(bText, undefined, { numeric: true }) : bText.localeCompare(aText, undefined, { numeric: true });
+            return isAsc ? aText.localeCompare(bText, undefined, { numeric: true }) : bText.localeCompare(aText, undefined, { numeric: true });
         });
 
         rows.forEach(row => tbl.querySelector('tbody').appendChild(row));
