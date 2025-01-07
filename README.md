@@ -37,7 +37,7 @@ This web app allows you to **filter** and **sort** a list of students based on t
 
 ## Try it Out! 🌐
 
-[Try the Student Details Filtering and Sorting]() 
+[Try the Student Details Filtering and Sorting](https://vinish2002.github.io/Student-Details-Filtering/)
 
 ---
 ## Image Preview 📸
