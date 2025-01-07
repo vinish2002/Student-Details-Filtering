@@ -44,8 +44,8 @@ document.getElementById('clearBtn').addEventListener('click', function () {
 document.querySelectorAll('th').forEach(header => {
     header.addEventListener('click', function () {
         // const column = this.getAttribute('data-column');
-        const table = document.getElementById('studentDetails');
-        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const tbl = document.getElementById('studentDetails');
+        const rows = Array.from(tbl.querySelectorAll('tbody tr'));
         const index = Array.from(this.parentNode.children).indexOf(this);
         const isAscending = this.classList.contains('asc');
         this.classList.toggle('asc', !isAscending);
@@ -57,6 +57,6 @@ document.querySelectorAll('th').forEach(header => {
             return isAscending ? aText.localeCompare(bText, undefined, { numeric: true }) : bText.localeCompare(aText, undefined, { numeric: true });
         });
 
-        rows.forEach(row => table.querySelector('tbody').appendChild(row));
+        rows.forEach(row => tbl.querySelector('tbody').appendChild(row));
     });
 });
