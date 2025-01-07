@@ -43,6 +43,7 @@ This web app allows you to **filter** and **sort** a list of students based on t
 ## Image Preview 📸
 
 Here's a preview of what the app looks like:
+![studSort](https://github.com/user-attachments/assets/88ca2fea-6a47-469c-b6c7-376b9059179a)
 
 
 
