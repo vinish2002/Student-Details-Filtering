@@ -46,14 +46,14 @@ document.querySelectorAll('th').forEach(header => {
         // const column = this.getAttribute('data-column');
         const tbl = document.getElementById('studentDetails');
         const rows = Array.from(tbl.querySelectorAll('tbody tr'));
-        const index = Array.from(this.parentNode.children).indexOf(this);
+        const indx = Array.from(this.parentNode.children).indexOf(this);
         const isAscending = this.classList.contains('asc');
         this.classList.toggle('asc', !isAscending);
         this.classList.toggle('desc', isAscending);
 
         rows.sort((a, b) => {
-            const aText = a.children[index].textContent;
-            const bText = b.children[index].textContent;
+            const aText = a.children[indx].textContent;
+            const bText = b.children[indx].textContent;
             return isAscending ? aText.localeCompare(bText, undefined, { numeric: true }) : bText.localeCompare(aText, undefined, { numeric: true });
         });
 
