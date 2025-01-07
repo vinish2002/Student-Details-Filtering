@@ -35,8 +35,8 @@ document.getElementById('filterBtn').addEventListener('click', function () {
 });
 
 document.getElementById('clearBtn').addEventListener('click', function () {
-    const rows = document.querySelectorAll('#studentDetails tbody tr');
-    rows.forEach(row => {
+    const rowList = document.querySelectorAll('#studentDetails tbody tr');
+    rowList.forEach(row => {
         row.classList.remove('showResult');
     });
 });
