@@ -19,9 +19,9 @@ document.getElementById('filterBtn').addEventListener('click', function () {
     const filterType = document.querySelector('input[name="filter"]:checked').value;
     const inputVal1 = parseInt(document.getElementById('inputVal1').value);
     const inputVal2 = parseInt(document.getElementById('inputVal2').value);
-    const rows = document.querySelectorAll('#studentDetails tbody tr');
+    const rowList = document.querySelectorAll('#studentDetails tbody tr');
 
-    rows.forEach(row => {
+    rowList.forEach(row => {
         const marks = parseInt(row.querySelector(`td:nth-child(${subject === 'english' ? 3 : subject === 'maths' ? 4 : subject === 'science' ? 5 : 6})`).textContent);
         row.classList.remove('showResult');
         if (filterType === 'above' && marks > inputVal1) {
